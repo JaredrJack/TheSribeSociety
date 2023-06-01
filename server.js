@@ -16,7 +16,7 @@ app.use('/posts', postsRouter);
 
 app.use('/auth', authRouter);
 
-mongoose.connect('mongodb://localhost:27017', {useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect('mongodb://127.0.0.1:27017/myapp', {useNewUrlParser:true, useUnifiedTopology:true})
 
     .then(() => {
 

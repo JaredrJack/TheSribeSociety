@@ -21,10 +21,7 @@ type Query {
     getAllArticles: Article
     getAuthor(id): Author
     getAllAuthors: [Author]
-}
+}`
 ;
 
 module.exports= typeDefs;
-
-}
-},

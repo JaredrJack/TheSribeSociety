@@ -9,8 +9,8 @@
     --off-white: #e5e5e5;
     --transp-white-1: rgba(255, 255, 255, 0.25);
     --transp-white-2: rgba(255, 255, 255, 0.1);
-    --blue-1: #62b8f5;
-    --blue-2: #4475ef;
+    --blue-1: #393f44;
+    --blue-2: #000000;
     --shadow: rgba(3, 46, 87, 0.2);
   }
   body {
@@ -24,7 +24,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 70%;
   }
   .container {
     width: 100%;
@@ -43,18 +43,7 @@
     border: 2px solid var(--transp-white-2);
     border-radius: 50%;
   }
-  .shape-1 {
-    height: 13em;
-    width: 13em;
-    right: -6.5em;
-    top: 1.8em;
-  }
-  .shape-2 {
-    height: 11em;
-    width: 11em;
-    bottom: -3.7em;
-    left: -2.5em;
-  }
+
   .search-container {
     font-size: 1em;
     display: grid;
@@ -141,8 +130,153 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
+  
+  .stars {
+    position: absolute;
+    background-color: #ffffff;
+    width: 0.31em;
+    height: 0.31em;
+    border-radius: 50%;
+    top: 9.37em;
+    left: 3.75em;
+    box-shadow: 4.37em 9.37em #ffffff, 5.62em -6.25em #ffffff,
+      17.5em 15.62em #ffffff, 23.75em 7.5em #ffffff, 3.75em 16.25em #ffffff, 27em 10.7em #ffffff,
+      10.62em -17.25em #ffffff, 4.9em -6.25em #ffffff, 12.11em -9.25em #ffffff, 12.32em -7.25em #ffffff,
+      18.62em -1.25em #ffffff, 9.62em -15.75em #ffffff, 14.32em -14.55em #ffffff,
+      24.92em -11.25em #ffffff, 17.92em -8.25em #ffffff;
+    animation: twinkle 3s infinite;
+  }
+
+.moon{
+  background-color: #686868;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 200px;
+  top: 0;
+  bottom: 180;
+  overflow: hidden;
+}
+.crater{
+  background-color: #434343;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+.crater:before{
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: -5px 0 0 2px #272727;
+  top: 2px;
+  left: 7px;
+}
+.crater-1{
+  top: 27px;
+  left: 90px;
+  transform: scale(0.9);
+}
+.crater-2{
+  bottom: 15px;
+  left: 61px;
+  transform: scale(0.6);
+}
+.crater-3{
+  left: 15px;
+  transform: scale(0.75);
+}
+.crater-4{
+  left: 107px;
+  top: 32px;
+  transform: scale(1.18);
+}
+.crater-5{
+  left: 33px;
+  bottom: 4px;
+  transform: scale(0.65);
+}
+.shadow{
+  height: 210px;
+  width: 210px;
+  box-shadow: 21px 0 0 5px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  position: relative;
+  bottom: 157.5px;
+  right: 46px;
+}
+
+
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .container {
+      font-size: 20px;
+    }
+  }
   @media screen and (max-width: 450px) {
     .wrapper {
       font-size: 14px;
     }
+  }
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #dcdcdf;
+    border-radius: 5px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    }
+    
+    .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+    
+    .button-30:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+    }
+    
+    .button-30:active {
+    box-shadow: #5b5b5b 0 3px 7px inset;
+    transform: translateY(2px);
+    }
+  
+    .try span:nth-of-type(even){
+      color:rgb(205, 187, 50);
+      font-size: 40px;
+  }
+  .try span:nth-of-type(odd){
+      color:rgb(0, 0, 0);
+      font-size: 40px;
   }

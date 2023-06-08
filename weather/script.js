@@ -1,4 +1,3 @@
-
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let cityRef = document.getElementById("city");
@@ -11,7 +10,7 @@ let getWeather = () => {
   }
   //If input field is NOT empty
   else {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=imperial`;
     //Clear the input field
     cityRef.value = "";
     fetch(url)

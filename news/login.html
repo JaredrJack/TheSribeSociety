@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="submit.css" />
+  </head>
+  <body>
+<div class="container">
+    <form autocomplete="off">
+      <h4>Login</h4>
+      <div class="input-section">
+        <label>Username <span class="required-color">*</span></label>
+        <input
+          type="text"
+          placeholder="Enter First Name"
+          id="first-name-input"
+          required
+        />
+        <span id="first-name-error" class="hide required-color error-message"
+          >Invalid Input</span
+        >
+        <span id="empty-first-name" class="hide required-color error-message"
+          >Username Cannot Be Empty</span
+        >
+      </div>
+      <div class="input-section">
+        <label>Password <span class="required-color">*</span></label>
+        <input
+          type="text "
+          placeholder="Enter Password"
+          id="last-name-input"
+          required
+        />
+        <span id="last-name-error" class="hide required-color error-message"
+          >Invalid Input</span
+        >
+        <span id="empty-last-name" class="hide required-color error-message">
+          Password Cannot Be Empty
+        </span>
+      </div>
+      <button id="submit-button"><a href ="news.html">Login</a></button>
+      <a href="news.html">Back to Page</a>
+    </form>
+  </div>

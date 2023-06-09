@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login & Sign-up</title>
+<link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <header>
+        <div class="try">
+            <span>The</span>
+            <span>Scribe</span>
+            <span>Society</span>
+          </div>
+        <nav class="navigation">
+       
+            <button class="btnLogin-popup">Get Started</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <input type="radio" name="slider" id="web" checked>
+            <input type="radio" name="slider" id="graphics">
+            <input type="radio" name="slider" id="photography">
+            <div class="buttons">
+                <label for="Journalist"></label>
+            </div>
+            <div class="content">
+                <div class="box web">
+                    <div class="contentBx">
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/hursldrn.json"
+                            trigger="loop"
+                            delay="1000"
+                            colors="primary:#ffffff,secondary:#e8b730"
+                            style="width:90px;height:90px;left:10px">
+                        </lord-icon>
+                      
+                        <h2>As a Journalist. </h2>
+                        <p>You must provide your Sources so our team can fact check your work prior to publishing. We hold our brand to the Highest
+                            of standards. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"> 
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" name="" id="">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="" id="">
+                    <label for="">Password</label>
+                </div>
+                    <div class="remember-password">
+                        <label for="">
+                            <input type="checkbox" name="" id=""> Remember Me 
+                        </label>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <a class="button-30" href="create.html">Login</a>
+                    <div class="login-register">
+                        <p>Don't have an account ? <a href="#" class="register-link"> Register</a></p>
+                    </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"> 
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="" id="">
+                    <label for="">Userame</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"> 
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" name="" id="">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="" id="">
+                    <label for="">Password</label>
+                </div>
+                    <div class="remember-password">
+                        <label for="">
+                            <input type="checkbox" name="" id=""> I agree to the terms & conditions 
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Have an account ? <a href="#" class="login-link" >Login</a></p>
+                    </div>
+            </form>
+        </div>
+    </div>
+<script src="app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

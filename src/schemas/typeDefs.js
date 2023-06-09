@@ -17,7 +17,7 @@ type Author {
 }
 
 type Query {
-    getArticles(id: ID): Artricle
+    getArticles(id: ID): Article
     getAllArticles: Article
     getAuthor(id: ID): Author
     getAllAuthors: [Author]

@@ -4,9 +4,9 @@ const typeDefs = gql`
 type Article {
     id: ID
     title: String
-    content:String
-    author:Author
-    publicationDate:String
+    content: String
+    author: Author
+    publicationDate: String
 }
 
 type Author {
@@ -19,9 +19,9 @@ type Author {
 type Query {
     getArticles(id: ID): Artricle
     getAllArticles: Article
-    getAuthor(id): Author
+    getAuthor(id: ID): Author
     getAllAuthors: [Author]
 }`
-;
+    ;
 
-module.exports= typeDefs;
+module.exports = typeDefs;
